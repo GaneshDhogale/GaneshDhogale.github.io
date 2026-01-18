@@ -73,4 +73,54 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Chatbot Functional Logic
+    const chatToggle = document.getElementById('chatToggle');
+    const closeChat = document.getElementById('closeChat');
+    const chatPopup = document.getElementById('chatPopup');
+    const chatBody = document.getElementById('chatBody');
+
+    if (chatToggle && chatPopup) {
+        let hasOpened = false;
+
+        chatToggle.addEventListener('click', () => {
+            chatPopup.classList.toggle('active');
+            if (chatPopup.classList.contains('active') && !hasOpened) {
+                // Determine greeting based on time of day
+                const hour = new Date().getHours();
+                let greeting = "Hello! 👋";
+                
+                if (hour < 12) greeting = "Good morning! ☀️";
+                else if (hour < 18) greeting = "Good afternoon! 🌤️";
+                else greeting = "Good evening! 🌙";
+
+                // Simulate typing delay
+                setTimeout(() => {
+                    addMessage("bot", `${greeting} I'm your AI Assistant. How can I help you automate your business today?`);
+                    hasOpened = true;
+                }, 500);
+            }
+        });
+
+        if (closeChat) {
+            closeChat.addEventListener('click', () => {
+                chatPopup.classList.remove('active');
+            });
+        }
+
+        // Optional: Close when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!chatPopup.contains(e.target) && !chatToggle.contains(e.target)) {
+                chatPopup.classList.remove('active');
+            }
+        });
+    }
+
+    function addMessage(sender, text) {
+        const messageDiv = document.createElement('div');
+        messageDiv.classList.add('message', sender);
+        messageDiv.textContent = text;
+        chatBody.appendChild(messageDiv);
+        chatBody.scrollTop = chatBody.scrollHeight; // Auto scroll
+    }
+
 });
