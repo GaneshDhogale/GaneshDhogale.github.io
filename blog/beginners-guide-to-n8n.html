@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner's Guide to n8n - Ganesh Bhat</title>
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Open+Sans:wght@400;600&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Styles: Adjusted path for subdirectory -->
+    <link rel="stylesheet" href="../assets/css/style.css?v=3">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation (Paths adjusted for subdirectory) -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">Ganesh<span>Bhat</span></a>
+            <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#expertise">Expertise</a></li>
+                <li><a href="../index.html#process-deck">Videos</a></li>
+                <li><a href="../blog.html" class="active">Blog</a></li>
+                <li><a href="../index.html#community">Community</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Post Hero (Dark Background like Reference) -->
+    <section class="blog-hero">
+        <div class="container">
+            <span class="blog-tag" style="background:var(--accent-color); color:white; border:none;">Agentic AI</span>
+            <h1>The Ultimate Beginner’s Guide to n8n: Automation for Everyone</h1>
+
+            <div class="blog-meta">
+                <img src="../assets/img/profile.jpg" alt="Author">
+                <span>Ganesh Bhat</span>
+                <span>&bull;</span>
+                <span>Jan 18, 2026</span>
+                <span>&bull;</span>
+                <span>8 min read</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Post Content (Single Column, Centered) -->
+    <section class="blog-content">
+        <div class="blog-wrapper">
+            <img src="https://automationfeed.com/wp-content/uploads/2024/11/n8n-beginners-guide.png"
+                alt="Featured Image"
+                style="width:100%; border-radius:12px; margin-bottom:3rem; box-shadow:0 10px 30px rgba(0,0,0,0.1);">
+
+            <p class="lead" style="font-size:1.3rem; font-weight:600; color:#1e293b;">
+                In the world of workflow automation, n8n has emerged as a game-changer. Unlike rigid, expensive legacy
+                tools, n8n offers a fair-code approach that is powerful, visual, and infinitely extensible.
+            </p>
+
+            <h2>What is n8n?</h2>
+            <p>n8n is a "fair-code" workflow automation tool that lets you interconnect every app you use to share and
+                manipulate data without writing a single line of code. It's similar to tools like Zapier or Make
+                (formerly Integromat), but with a key difference: <strong>flexibility</strong>.</p>
+            <p>With n8n, you can host it on your own server for free, or use their cloud hosting. This makes it perfect
+                for enterprises concerned about data privacy (like GDPR compliance) and developers who want total
+                control.</p>
+
+            <h2>Why Choose n8n Over Others?</h2>
+            <ul>
+                <li><strong>Node-Based Architecture:</strong> Visualize your workflow as a flowchart.</li>
+                <li><strong>Self-Hostable:</strong> Keep your data on your own infrastructure.</li>
+                <li><strong>Advanced Logic:</strong> Use JavaScript functions directly if you need complex logic.</li>
+                <li><strong>Custom Webhooks:</strong> Trigger workflows from any external event.</li>
+            </ul>
+
+            <h2>Building Your First Agentic Workflow</h2>
+            <p>The real power of n8n in 2026 comes from its integration with AI Agents. You can simply drag a
+                "LangChain" node, connect it to OpenAI or Gemini, and give it access to tools like Google Search or your
+                internal database.</p>
+            <p>For example, imagine a workflow that triggers when a customer emails support:</p>
+            <ol>
+                <li><strong>Trigger:</strong> Email received (IMAP Node).</li>
+                <li><strong>Analyze:</strong> AI Agent reads the email sentiment (OpenAI Node).</li>
+                <li><strong>Decision:</strong> If urgent, Slack the manager. If routine, draft a reply.</li>
+                <li><strong>Action:</strong> Send draft to Review folder (Gmail Node).</li>
+            </ol>
+
+            <div
+                style="background:#f8fafc; border-left:4px solid var(--accent-color); padding:2rem; margin:2rem 0; border-radius:8px;">
+                <strong>Pro Tip:</strong> Start small. Don't try to build a fully autonomous enterprise agent on day
+                one. Begin by automating a single repetitive task, like summarizing meeting notes.
+            </div>
+
+            <h2>Conclusion</h2>
+            <p>n8n is bridging the gap between simple automation and complex software development. Whether you are a
+                no-code enthusiast or a seasoned developer, it belongs in your toolkit.</p>
+            <p>Ready to build? <a href="../index.html#contact"
+                    style="color:var(--accent-color); font-weight:bold;">Let's talk strategy</a> regarding your first
+                automation implementation.</p>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Ganesh<span>Bhat</span></h2>
+                    <p>Building the next generation of intelligent automation.</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ganesh Bhat. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
