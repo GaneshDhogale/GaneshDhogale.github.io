@@ -174,7 +174,7 @@
                 <div class="about-stats full-width-stats">
                     <div class="stat-card wide-card">
                         <h3>AI & Automation Solution Architect</h3>
-                        <p>7+ Years Experience</p>
+                        <p>9+ Years Experience</p>
                     </div>
                     <div class="stat-card wide-card">
                         <h3>Google AI Product Expert</h3>
@@ -473,14 +473,38 @@
                 </div>
                 <button class="close-chat" id="closeChat"><i class="fas fa-times"></i></button>
             </div>
-            <div class="chat-body" id="chatBody">
-                <p class="chat-timestamp">Today</p>
-                <!-- Messages will be injected here -->
-            </div>
-            <div class="chat-footer">
-                <a href="https://wa.me/message/5B3COVB4TXWHO1" target="_blank" class="btn btn-primary btn-block">
-                    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-                </a>
+            <div class="chat-body" id="chatBody" style="padding: 0;">
+
+                <!-- Initial Options (Dual Path) -->
+                <div class="chat-options-container" id="initialOptions"
+                    style="padding: 2rem 1.5rem; text-align: center;">
+                    <p style="margin-bottom: 1.5rem; color: #64748b; font-size: 1rem;">How would you like to connect?
+                    </p>
+
+                    <a href="https://wa.me/message/5B3COVB4TXWHO1" target="_blank" class="chat-option-btn whatsapp">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+
+                    <button class="chat-option-btn ai-agent" onclick="startAIAgent()">
+                        <i class="fas fa-robot"></i> Chat with AI Agent
+                    </button>
+                </div>
+
+                <!-- AI Agent View (Hidden Initially) -->
+                <div class="ai-agent-view" id="aiAgentView" style="display: none; padding: 1rem;">
+                    <div id="aiChatLog"
+                        style="height: 250px; overflow-y: auto; margin-bottom: 1rem; padding-right: 5px;">
+                        <div class="message bot">Hello! I can answer specific questions about Ganesh. What would you
+                            like to know?</div>
+                    </div>
+                    <div class="ai-options-grid">
+                        <button class="ai-chip" onclick="askAI('contact')">📞 Contact Info</button>
+                        <button class="ai-chip" onclick="askAI('strengths')">💪 Core Strengths</button>
+                        <button class="ai-chip" onclick="askAI('linkedin')">🔗 LinkedIn Profile</button>
+                        <button class="ai-chip secondary" onclick="resetChat()">🔄 Main Menu</button>
+                    </div>
+                </div>
+
             </div>
         </div>
         <button class="chat-toggle" id="chatToggle">

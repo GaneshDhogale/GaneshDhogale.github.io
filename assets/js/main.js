@@ -77,27 +77,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const chatToggle = document.getElementById('chatToggle');
     const closeChat = document.getElementById('closeChat');
     const chatPopup = document.getElementById('chatPopup');
-    const chatBody = document.getElementById('chatBody');
+
+    // Elements for Dual Logic
+    const initialOptions = document.getElementById('initialOptions');
+    const aiAgentView = document.getElementById('aiAgentView');
+    const aiChatLog = document.getElementById('aiChatLog');
 
     if (chatToggle && chatPopup) {
-        let hasOpened = false;
 
         chatToggle.addEventListener('click', () => {
             chatPopup.classList.toggle('active');
-            if (chatPopup.classList.contains('active') && !hasOpened) {
-                // Determine greeting based on time of day
-                const hour = new Date().getHours();
-                let greeting = "Hello! 👋";
-
-                if (hour < 12) greeting = "Good morning! ☀️";
-                else if (hour < 18) greeting = "Good afternoon! 🌤️";
-                else greeting = "Good evening! 🌙";
-
-                // Simulate typing delay
-                setTimeout(() => {
-                    addMessage("bot", `${greeting} I'm your AI Assistant. How can I help you automate your business today?`);
-                    hasOpened = true;
-                }, 500);
+            // Reset to main menu on open if not active
+            if (chatPopup.classList.contains('active')) {
+                resetChat();
             }
         });
 
@@ -107,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        // Optional: Close when clicking outside
+        // Close when clicking outside
         document.addEventListener('click', (e) => {
             if (!chatPopup.contains(e.target) && !chatToggle.contains(e.target)) {
                 chatPopup.classList.remove('active');
@@ -115,12 +107,56 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Agent Logic
+    window.startAIAgent = function () {
+        if (initialOptions && aiAgentView) {
+            initialOptions.style.display = 'none';
+            aiAgentView.style.display = 'block';
+        }
+    }
+
+    window.resetChat = function () {
+        if (initialOptions && aiAgentView) {
+            initialOptions.style.display = 'flex'; // Restore flex for centering
+            aiAgentView.style.display = 'none';
+            // Clear chat log except greeting
+            aiChatLog.innerHTML = '<div class="message bot">Hello! I can answer specific questions about Ganesh. What would you like to know?</div>';
+        }
+    }
+
+    window.askAI = function (topic) {
+        let question = "";
+        let answer = "";
+
+        switch (topic) {
+            case 'contact':
+                question = "📞 Contact Info";
+                answer = "You can reach Ganesh via email at <b>ai.brahmabusiness@gmail.com</b> or connect on LinkedIn/WhatsApp using the links in the footer.";
+                break;
+            case 'strengths':
+                question = "💪 Core Strengths";
+                answer = "Ganesh excels in <b>Agentic AI, n8n Automation, and Enterprise RPA</b>. He builds systems that autonomously execute complex workflows.";
+                break;
+            case 'linkedin':
+                question = "🔗 LinkedIn Profile";
+                answer = "Connect with Ganesh here: <a href='https://www.linkedin.com/company/ai-brahmaai/' target='_blank' style='color:#0ea5e9; text-decoration:underline;'>AI Brahma LinkedIn</a>";
+                break;
+        }
+
+        addMessage("user", question);
+
+        // Typing effect
+        setTimeout(() => {
+            addMessage("bot", answer);
+        }, 400);
+    }
+
     function addMessage(sender, text) {
         const messageDiv = document.createElement('div');
         messageDiv.classList.add('message', sender);
-        messageDiv.textContent = text;
-        chatBody.appendChild(messageDiv);
-        chatBody.scrollTop = chatBody.scrollHeight; // Auto scroll
+        messageDiv.innerHTML = text; // Changed to innerHTML for links
+        aiChatLog.appendChild(messageDiv);
+        aiChatLog.scrollTop = aiChatLog.scrollHeight;
     }
 
     // Blog Engagement Logic
