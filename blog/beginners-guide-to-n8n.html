@@ -54,9 +54,8 @@
     <!-- Post Content (Single Column, Centered) -->
     <section class="blog-content">
         <div class="blog-wrapper">
-            <img src="https://automationfeed.com/wp-content/uploads/2024/11/n8n-beginners-guide.png"
-                alt="Featured Image"
-                style="width:100%; border-radius:12px; margin-bottom:3rem; box-shadow:0 10px 30px rgba(0,0,0,0.1);">
+            <img src="../assets/img/n8n-agent-workflow.png" alt="Featured Image"
+                style="width:100%; border-radius:12px; margin-bottom:3rem; box-shadow:0 10px 30px rgba(0,0,0,0.1); max-height: 400px; object-fit: contain; background: #0f172a;">
 
             <p class="lead" style="font-size:1.3rem; font-weight:600; color:#1e293b;">
                 In the world of workflow automation, n8n has emerged as a game-changer. Unlike rigid, expensive legacy
@@ -114,6 +113,24 @@
                     data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0"
                     data-input-position="bottom" data-theme="light" data-lang="en" crossorigin="anonymous" async>
                     </script>
+            </div>
+
+            <!-- Engagement Bar -->
+            <div class="engagement-bar">
+                <div class="reaction-container">
+                    <button class="reaction-btn" id="reactionBtn" onclick="toggleReaction()">
+                        <span class="react-icon">❤️</span>
+                        <span class="react-count" id="reactCount">20</span>
+                    </button>
+                    <span class="react-label">Join the support squad!</span>
+                </div>
+                <div class="share-container">
+                    <span>Share this:</span>
+                    <a href="#" id="shareLinkedin" target="_blank" class="share-btn linkedin"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="#" id="shareWhatsapp" target="_blank" class="share-btn whatsapp"><i
+                            class="fab fa-whatsapp"></i></a>
+                </div>
             </div>
 
         </div>
