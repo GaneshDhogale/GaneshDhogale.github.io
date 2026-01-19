@@ -2137,3 +2137,28 @@ footer {
     /* White bg for non-square images */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
+
+/* Mobile Responsive For Achievements & Videos */
+@media (max-width: 768px) {
+    .achievement-card {
+        min-width: 300px;
+        /* Reduce width for mobile */
+        height: 350px;
+        /* Reduce height */
+    }
+
+    .video-card {
+        flex: 0 0 300px;
+        /* Reduce width for mobile */
+    }
+
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+        background: rgba(255, 255, 255, 0.9);
+        /* More visible on images */
+        color: var(--primary-color);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+}

@@ -6,6 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Post Title | Ganesh Bhat</title>
     <meta name="description" content="Brief description of the blog post.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://ganeshdhogale.github.io/blog/YOUR-POST-URL.html">
+    <meta property="og:title" content="Blog Post Title | Ganesh Bhat">
+    <meta property="og:description" content="Brief description of the blog post.">
+    <meta property="og:image" content="https://ganeshdhogale.github.io/assets/img/blog/YOUR-IMAGE.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ganeshdhogale.github.io/blog/YOUR-POST-URL.html">
+    <meta property="twitter:title" content="Blog Post Title | Ganesh Bhat">
+    <meta property="twitter:description" content="Brief description of the blog post.">
+    <meta property="twitter:image" content="https://ganeshdhogale.github.io/assets/img/blog/YOUR-IMAGE.png">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -124,6 +139,51 @@
         </div>
     </article>
 
+    <!-- Achievements Section (Reused) -->
+    <section id="achievements" class="section fade-in" style="background: var(--bg-light);">
+        <div class="container">
+            <h2>Achievements & Recognition</h2>
+            <div class="carousel-wrapper">
+                <button class="carousel-btn prev-btn" onclick="scrollAchievements('left')"><i
+                        class="fas fa-chevron-left"></i></button>
+                <div class="video-carousel" id="achievementCarousel"
+                    style="overflow-x: hidden; scroll-behavior: smooth;">
+                    <!-- Achievement 1 -->
+                    <div class="card achievement-card">
+                        <img src="../assets/img/achievements/achievement1.png"
+                            alt="Automation Anywhere Partner of Year">
+                    </div>
+                    <!-- Achievement 2 -->
+                    <div class="card achievement-card">
+                        <img src="../assets/img/achievements/achievement2.png" alt="Pathfinder Member of Quarter">
+                    </div>
+                    <!-- Achievement 3 -->
+                    <div class="card achievement-card">
+                        <img src="../assets/img/achievements/achievement3.png" alt="Community Champion">
+                    </div>
+                    <!-- Achievement 4 -->
+                    <div class="card achievement-card">
+                        <img src="../assets/img/achievements/achievement4.png" alt="Detailed Recognition">
+                    </div>
+                    <!-- Achievement 5 -->
+                    <div class="card achievement-card">
+                        <img src="../assets/img/achievements/achievement5.png" alt="Murali K Recognition">
+                    </div>
+                    <!-- Achievement 6 -->
+                    <div class="card achievement-card">
+                        <img src="../assets/img/achievements/achievement6.png" alt="Prachi Chauhan Recognition">
+                    </div>
+                    <!-- Achievement 7 -->
+                    <div class="card achievement-card">
+                        <img src="../assets/img/achievements/achievement7.png" alt="Kishore Gosika Recognition">
+                    </div>
+                </div>
+                <button class="carousel-btn next-btn" onclick="scrollAchievements('right')"><i
+                        class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -147,6 +207,7 @@
 
     <!-- Scripts -->
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/script.js"></script>
 </body>
 
 </html>
