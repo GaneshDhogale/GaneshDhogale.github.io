@@ -557,6 +557,14 @@ a {
 .mobile-links a {
     font-size: 2rem;
     font-weight: 700;
+    color: var(--text-light);
+    /* Make sure links are visible */
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.mobile-links a:hover {
+    color: var(--accent-color);
 }
 
 /* Hero Section */
@@ -640,9 +648,22 @@ a {
     color: white;
 }
 
+/* Secondary Button */
 .btn-secondary {
-    border: 1px solid var(--glass-border);
+    border: 1px solid var(--accent-color);
     background: transparent;
+    color: var(--text-light);
+    /* Ensure visibility on dark background */
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn-secondary:hover {
+    background: rgba(239, 68, 68, 0.1);
+    color: var(--accent-color);
+    transform: translateY(-3px);
 }
 
 /* Cards (Glassmorphism) */
