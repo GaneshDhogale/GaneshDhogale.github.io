@@ -145,376 +145,431 @@
         </div>
     </section>
 
-    <!-- About Me -->
-    <section id="about" class="section fade-in">
+    <!-- Achievements Section -->
+    <section id="achievements" class="section fade-in" style="background: var(--bg-light);">
         <div class="container">
-            <h2>About Me</h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>I am a <strong>Certified Solution Architect and AI Automation Specialist with 9+ years of
-                            experience</strong> architecting and delivering enterprise-scale intelligent automation
-                        platforms that combine AI, decision intelligence, and process orchestration.</p>
-                    <p>My expertise centers on designing AI-first automation architectures using RPA, agentic workflows,
-                        and enterprise AI frameworks such as LLM-based reasoning systems, Retrieval-Augmented Generation
-                        (RAG), Intelligent Document Processing (IDP), and event-driven automation patterns. I specialize
-                        in building scalable AI-powered solutions across business-critical systems including Salesforce,
-                        SAP, and large document-heavy operations.</p>
-                    <p>As an <strong>Automation Anywhere MVP</strong>, I have led and architected initiatives such as
-                        AI-driven Salesforce Contract Automation, SAP operational intelligence automations, and
-                        government-grade AI Adjudication Assistants, enabling faster decisions, higher accuracy, and
-                        measurable business outcomes. My work consistently bridges AI models, enterprise workflows, and
-                        human-in-the-loop governance.</p>
-                    <p>I am deeply focused on <strong>AI + Automation convergence</strong>—leveraging LLM orchestration,
-                        prompt engineering strategies, AI agents, workflow engines, and secure enterprise integrations
-                        to deliver future-ready digital platforms, not just bots.</p>
-                    <p>Beyond delivery, I actively mentor and enable automation professionals, sharing real-world
-                        enterprise AI automation knowledge through my YouTube channel <strong>AI Brahma</strong>, with a
-                        mission to shape the next generation of AI-native automation architects.</p>
-                </div>
-                <div class="about-stats full-width-stats">
-                    <div class="stat-card wide-card">
-                        <h3>AI & Automation Solution Architect</h3>
-                        <p>9+ Years Experience</p>
-                    </div>
-                    <div class="stat-card wide-card">
-                        <h3>Google AI Product Expert</h3>
-                        <p>Recognized Expert</p>
-                    </div>
-                    <div class="stat-card wide-card">
-                        <h3>Certified Trainer</h3>
-                        <p>n8n, Zapier, Automation Anywhere, UiPath, Copilot, Azure AI Foundry</p>
-                    </div>
-                    <div class="stat-card wide-card">
-                        <h3>MVP</h3>
-                        <p>Automation Anywhere</p>
-                    </div>
-                    <div class="stat-card wide-card">
-                        <h3>YouTuber</h3>
-                        <p>AI Brahma</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- My Tech Stack & Tools (New Section) -->
-    <section id="tech-stack" class="section fade-in">
-        <div class="container">
-            <h2 style="text-align: center; margin-bottom: 3rem;">My Tech Stack & Tools</h2>
-            <div class="logo-grid">
-                <div class="logo-item" data-tooltip="Automation Anywhere">
-                    <img src="assets/img/logos/aa.jpg" class="tech-logo" alt="Automation Anywhere">
-                </div>
-                <div class="logo-item" data-tooltip="UiPath">
-                    <img src="assets/img/logos/uipath.jpg" class="tech-logo" alt="UiPath">
-                </div>
-                <div class="logo-item" data-tooltip="LangChain">
-                    <img src="assets/img/logos/langchain.jpg" class="tech-logo" alt="LangChain">
-                </div>
-                <div class="logo-item" data-tooltip="Python">
-                    <img src="assets/img/logos/python.webp" class="tech-logo" alt="Python">
-                </div>
-                <div class="logo-item" data-tooltip="Gemini">
-                    <img src="assets/img/logos/gemini.png" class="tech-logo" alt="Gemini">
-                </div>
-                <div class="logo-item" data-tooltip="Azure AI">
-                    <img src="assets/img/logos/azure.jpg" class="tech-logo" alt="Azure AI">
-                </div>
-                <div class="logo-item" data-tooltip="Copilot Studio">
-                    <img src="assets/img/logos/copilot.jpg" class="tech-logo" alt="Copilot Studio">
-                </div>
-                <div class="logo-item" data-tooltip="LangGraph">
-                    <img src="assets/img/logos/langgraph.jpg" class="tech-logo" alt="LangGraph">
-                </div>
-                <div class="logo-item" data-tooltip="Google Antigravity">
-                    <img src="assets/img/logos/antigravity.jpg" class="tech-logo" alt="Google Antigravity">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- AI Agent Process Deck (Moved) -->
-    <section id="process-deck" class="section fade-in">
-        <div class="container">
-            <h2>AI Agent Process Deck</h2>
+            <h2>Achievements & Recognition</h2>
             <div class="carousel-wrapper">
-                <button class="carousel-btn prev-btn" onclick="scrollVideos('left')"><i
+                <button class="carousel-btn prev-btn" onclick="scrollAchievements('left')"><i
                         class="fas fa-chevron-left"></i></button>
-                <div class="video-carousel" id="videoCarousel">
-                    <!-- Video 1 -->
-                    <div class="card video-card">
-                        <div class="video-container">
-                            <iframe src="https://www.youtube.com/embed/iAsEzeyMWPw" title="Autonomous Delivery Routing"
-                                frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3>Autonomous Delivery Routing & Fulfillment Optimization AI Agent</h3>
-                        </div>
+                <div class="video-carousel" id="achievementCarousel"
+                    style="overflow-x: hidden; scroll-behavior: smooth;">
+                    <!-- Achievement 1 -->
+                    <div class="card achievement-card">
+                        <img src="assets/img/achievements/achievement1.png" alt="Automation Anywhere Partner of Year">
                     </div>
-                    <!-- Video 2 -->
-                    <div class="card video-card">
-                        <div class="video-container">
-                            <iframe src="https://www.youtube.com/embed/h9jGDN05Cgw" title="Lead Enrichment Agent"
-                                frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3>Lead Enrichment & Orchestration AI Agent using Automation Anywhere</h3>
-                        </div>
+                    <!-- Achievement 2 -->
+                    <div class="card achievement-card">
+                        <img src="assets/img/achievements/achievement2.png" alt="Pathfinder Member of Quarter">
                     </div>
-                    <!-- Video 3 -->
-                    <div class="card video-card">
-                        <div class="video-container">
-                            <iframe src="https://www.youtube.com/embed/yOMnKjF67ew" title="AI Agent Talks Like Me"
-                                frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3>This AI Agent Talks Like Me 🤖</h3>
-                        </div>
+                    <!-- Achievement 3 -->
+                    <div class="card achievement-card">
+                        <img src="assets/img/achievements/achievement3.png" alt="Community Champion">
                     </div>
-                    <!-- Video 4 -->
-                    <div class="card video-card">
-                        <div class="video-container">
-                            <iframe src="https://www.youtube.com/embed/jVeHpSafwrE" title="Voice-Driven Task Creation"
-                                frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3>APA Project : Voice-Driven Task Creation Assistant</h3>
-                        </div>
+                    <!-- Achievement 4 -->
+                    <div class="card achievement-card">
+                        <img src="assets/img/achievements/achievement4.png" alt="Detailed Recognition">
                     </div>
-                    <!-- Video 5 -->
-                    <div class="card video-card">
-                        <div class="video-container">
-                            <iframe src="https://www.youtube.com/embed/IdnBAdDNGiU" title="Medical Coding AI Agent"
-                                frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3>Medical Coding AI Agent | Automation Anywhere APA Project</h3>
-                        </div>
-                    </div>
-                    <!-- Video 6 -->
-                    <div class="card video-card">
-                        <div class="video-container">
-                            <iframe src="https://www.youtube-nocookie.com/embed/BqskRve1KtE"
-                                title="Enterprise Customer Support" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3>Enterprise-Level AI Agent for Customer Support, fully built in Python!</h3>
-                        </div>
-                    </div>
-                    <!-- Video 7 -->
-                    <div class="card video-card">
-                        <div class="video-container">
-                            <iframe src="https://www.youtube-nocookie.com/embed/FD8p2j4-vdE"
-                                title="Automated Customer Support n8n" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3>#n8n How I Automated Customer Support Using n8n + AI</h3>
-                        </div>
-                    </div>
-                    <!-- Video 8 -->
-                    <div class="card video-card">
-                        <div class="video-container">
-                            <iframe src="https://www.youtube-nocookie.com/embed/c5nYOKRsftM" title="AI Agent vs Tool"
-                                frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3>Who’s the Boss — AI Agent or Tool? 🤖 | ADTF vs TDAF Explained Simply!</h3>
-                        </div>
-                    </div>
-                    <!-- Video 9 -->
-                    <div class="card video-card">
-                        <div class="video-container">
-                            <iframe src="https://www.youtube-nocookie.com/embed/uHUFRtmqyKU"
-                                title="Sprint Planning to Jira" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3>From Sprint Planning to Jira in Minutes 🤖 | AI Agent Built with Automation Anywhere
-                            </h3>
-                        </div>
-                    </div>
-                    <!-- Video 10 -->
-                    <div class="card video-card">
-                        <div class="video-container">
-                            <iframe src="https://www.youtube-nocookie.com/embed/2-k_pC05dUI"
-                                title="IT & Customer Support Emails" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <button class="carousel-btn next-btn" onclick="scrollVideos('right')"><i
-                            class="fas fa-chevron-right"></i></button>
                 </div>
+                <button class="carousel-btn next-btn" onclick="scrollAchievements('right')"><i
+                        class="fas fa-chevron-right"></i></button>
             </div>
         </div>
-    </section>
 
-    <!-- Core Expertise (Moved & Updated with Logos) -->
-    <section id="expertise" class="section fade-in">
-        <div class="container">
-            <h2>Core Expertise & What I Bring</h2>
-            <div class="grid-3">
-                <div class="card expertise-card">
-                    <div class="expertise-emoji" style="animation-delay: 0s;">🤖</div>
-                    <h3>Agentic Automation (APA)</h3>
-                    <p>Deep expertise in designing AI-driven RPA solutions and autonomous agents that can plan and
-                        execute complex workflows.</p>
-                </div>
-                <div class="card expertise-card">
-                    <div class="expertise-emoji" style="animation-delay: 0.5s;">⚡</div>
-                    <h3>Advanced Workflow Ops</h3>
-                    <p>Mastery of low-code orchestration platforms like <strong>n8n</strong> and <strong>Zapier</strong>
-                        to build robust, scalable business pipelines.</p>
-                </div>
-                <div class="card expertise-card">
-                    <div class="expertise-emoji" style="animation-delay: 1s;">🦾</div>
-                    <h3>RPA Leadership</h3>
-                    <p>Proven track record with <strong>Automation Anywhere</strong> & <strong>UiPath</strong>,
-                        delivering enterprise-grade automation for global clients.</p>
-                </div>
-                <div class="card expertise-card">
-                    <div class="expertise-emoji" style="animation-delay: 1.5s;">🔗</div>
-                    <h3>Enterprise Integration</h3>
-                    <p>Strong background in integrating <strong>Salesforce, SAP, Workday</strong>, and Google Products
-                        for seamless data flow.</p>
-                </div>
-                <div class="card expertise-card">
-                    <div class="expertise-emoji" style="animation-delay: 2s;">🎓</div>
-                    <h3>Training & Mentorship</h3>
-                    <p>Conducting master-level sessions on GenAI, Copilot, and RPA via corporate programs and the
-                        <strong>AI Brahma</strong> community.
-                    </p>
-                </div>
-                <div class="card expertise-card">
-                    <div class="expertise-emoji" style="animation-delay: 2.5s;">🚀</div>
-                    <h3>Thought Leadership</h3>
-                    <p>Speaker at summits and webinars on AI Agents and GenAI. Passionate about shaping the future of
-                        digital workforces.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- Certifications & Community -->
-    <section id="community" class="section fade-in">
-        <div class="container">
-            <h2>Certifications & Community</h2>
-            <div class="community-wrapper">
-                <ul class="cert-list card">
-                    <li><i class="fas fa-certificate box-icon"></i> Automation Anywhere MVP</li>
-                    <li><i class="fas fa-check-circle box-icon"></i> Certified Master RPA Professional</li>
-                    <li><i class="fas fa-check-circle box-icon"></i> Certified Solution Architect</li>
-                    <li><i class="fas fa-award box-icon"></i> ABBYY Recognized Developer</li>
-                </ul>
-                <div class="community-links card">
-                    <h3>Follow AI Brahma</h3>
-                    <p>Join thousands of learners on my YouTube channel where I share tutorials, reviews, and insights
-                        on the latest in AI & Automation.</p>
-                    <a href="#" class="btn btn-primary"><i class="fab fa-youtube"></i> Visit Channel</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section fade-in">
-        <div class="container contact-container">
-            <h2>Let's Build Intelligent Systems</h2>
-            <p>Ready to automate the future? Reach out for consulting, mentorship, or collaboration.</p>
-            <div class="contact-links">
-                <a href="mailto:ai.brahmabusiness@gmail.com" class="contact-item">
-                    <i class="fas fa-envelope"></i> Email
-                </a>
-                <a href="https://www.linkedin.com/company/ai-brahmaai/" target="_blank" class="contact-item">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
-                <a href="https://t.me/+04iV7x2panI2Njc1" target="_blank" class="contact-item">
-                    <i class="fab fa-telegram"></i> Telegram
-                </a>
-                <a href="https://wa.me/message/5B3COVB4TXWHO1" target="_blank" class="contact-item">
-                    <i class="fab fa-whatsapp"></i> WhatsApp
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h2>Ganesh<span>Bhat</span></h2>
-                    <p>Building the next generation of intelligent automation.</p>
-                </div>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Ganesh Bhat. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Chatbot Widget -->
-    <div class="chat-widget">
-        <div class="chat-popup" id="chatPopup">
-            <div class="chat-header">
-                <div class="chat-info">
-                    <div class="chat-avatar">
-                        <i class="fas fa-robot"></i>
+        <!-- About Me -->
+        <section id="about" class="section fade-in">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>I am a <strong>Certified Solution Architect and AI Automation Specialist with 9+ years of
+                                experience</strong> architecting and delivering enterprise-scale intelligent automation
+                            platforms that combine AI, decision intelligence, and process orchestration.</p>
+                        <p>My expertise centers on designing AI-first automation architectures using RPA, agentic
+                            workflows,
+                            and enterprise AI frameworks such as LLM-based reasoning systems, Retrieval-Augmented
+                            Generation
+                            (RAG), Intelligent Document Processing (IDP), and event-driven automation patterns. I
+                            specialize
+                            in building scalable AI-powered solutions across business-critical systems including
+                            Salesforce,
+                            SAP, and large document-heavy operations.</p>
+                        <p>As an <strong>Automation Anywhere MVP</strong>, I have led and architected initiatives such
+                            as
+                            AI-driven Salesforce Contract Automation, SAP operational intelligence automations, and
+                            government-grade AI Adjudication Assistants, enabling faster decisions, higher accuracy, and
+                            measurable business outcomes. My work consistently bridges AI models, enterprise workflows,
+                            and
+                            human-in-the-loop governance.</p>
+                        <p>I am deeply focused on <strong>AI + Automation convergence</strong>—leveraging LLM
+                            orchestration,
+                            prompt engineering strategies, AI agents, workflow engines, and secure enterprise
+                            integrations
+                            to deliver future-ready digital platforms, not just bots.</p>
+                        <p>Beyond delivery, I actively mentor and enable automation professionals, sharing real-world
+                            enterprise AI automation knowledge through my YouTube channel <strong>AI Brahma</strong>,
+                            with a
+                            mission to shape the next generation of AI-native automation architects.</p>
                     </div>
-                    <div>
-                        <h4>AI Assistant</h4>
-                        <p class="status">Online</p>
+                    <div class="about-stats full-width-stats">
+                        <div class="stat-card wide-card">
+                            <h3>AI & Automation Solution Architect</h3>
+                            <p>9+ Years Experience</p>
+                        </div>
+                        <div class="stat-card wide-card">
+                            <h3>Google AI Product Expert</h3>
+                            <p>Recognized Expert</p>
+                        </div>
+                        <div class="stat-card wide-card">
+                            <h3>Certified Trainer</h3>
+                            <p>n8n, Zapier, Automation Anywhere, UiPath, Copilot, Azure AI Foundry</p>
+                        </div>
+                        <div class="stat-card wide-card">
+                            <h3>MVP</h3>
+                            <p>Automation Anywhere</p>
+                        </div>
+                        <div class="stat-card wide-card">
+                            <h3>YouTuber</h3>
+                            <p>AI Brahma</p>
+                        </div>
                     </div>
                 </div>
-                <button class="close-chat" id="closeChat"><i class="fas fa-times"></i></button>
             </div>
-            <div class="chat-body" id="chatBody" style="padding: 0;">
+        </section>
 
-                <!-- Initial Options (Dual Path) -->
-                <div class="chat-options-container" id="initialOptions"
-                    style="padding: 2rem 1.5rem; text-align: center;">
-                    <p style="margin-bottom: 1.5rem; color: #64748b; font-size: 1rem;">How would you like to connect?
-                    </p>
 
-                    <a href="https://wa.me/message/5B3COVB4TXWHO1" target="_blank" class="chat-option-btn whatsapp">
-                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+        <!-- My Tech Stack & Tools (New Section) -->
+        <section id="tech-stack" class="section fade-in">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 3rem;">My Tech Stack & Tools</h2>
+                <div class="logo-grid">
+                    <div class="logo-item" data-tooltip="Automation Anywhere">
+                        <img src="assets/img/logos/aa.jpg" class="tech-logo" alt="Automation Anywhere">
+                    </div>
+                    <div class="logo-item" data-tooltip="UiPath">
+                        <img src="assets/img/logos/uipath.jpg" class="tech-logo" alt="UiPath">
+                    </div>
+                    <div class="logo-item" data-tooltip="LangChain">
+                        <img src="assets/img/logos/langchain.jpg" class="tech-logo" alt="LangChain">
+                    </div>
+                    <div class="logo-item" data-tooltip="Python">
+                        <img src="assets/img/logos/python.webp" class="tech-logo" alt="Python">
+                    </div>
+                    <div class="logo-item" data-tooltip="Gemini">
+                        <img src="assets/img/logos/gemini.png" class="tech-logo" alt="Gemini">
+                    </div>
+                    <div class="logo-item" data-tooltip="Azure AI">
+                        <img src="assets/img/logos/azure.jpg" class="tech-logo" alt="Azure AI">
+                    </div>
+                    <div class="logo-item" data-tooltip="Copilot Studio">
+                        <img src="assets/img/logos/copilot.jpg" class="tech-logo" alt="Copilot Studio">
+                    </div>
+                    <div class="logo-item" data-tooltip="LangGraph">
+                        <img src="assets/img/logos/langgraph.jpg" class="tech-logo" alt="LangGraph">
+                    </div>
+                    <div class="logo-item" data-tooltip="Google Antigravity">
+                        <img src="assets/img/logos/antigravity.jpg" class="tech-logo" alt="Google Antigravity">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Agent Process Deck (Moved) -->
+        <section id="process-deck" class="section fade-in">
+            <div class="container">
+                <h2>AI Agent Process Deck</h2>
+                <div class="carousel-wrapper">
+                    <button class="carousel-btn prev-btn" onclick="scrollVideos('left')"><i
+                            class="fas fa-chevron-left"></i></button>
+                    <div class="video-carousel" id="videoCarousel">
+                        <!-- Video 1 -->
+                        <div class="card video-card">
+                            <div class="video-container">
+                                <iframe src="https://www.youtube.com/embed/iAsEzeyMWPw"
+                                    title="Autonomous Delivery Routing" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="video-info">
+                                <h3>Autonomous Delivery Routing & Fulfillment Optimization AI Agent</h3>
+                            </div>
+                        </div>
+                        <!-- Video 2 -->
+                        <div class="card video-card">
+                            <div class="video-container">
+                                <iframe src="https://www.youtube.com/embed/h9jGDN05Cgw" title="Lead Enrichment Agent"
+                                    frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="video-info">
+                                <h3>Lead Enrichment & Orchestration AI Agent using Automation Anywhere</h3>
+                            </div>
+                        </div>
+                        <!-- Video 3 -->
+                        <div class="card video-card">
+                            <div class="video-container">
+                                <iframe src="https://www.youtube.com/embed/yOMnKjF67ew" title="AI Agent Talks Like Me"
+                                    frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="video-info">
+                                <h3>This AI Agent Talks Like Me 🤖</h3>
+                            </div>
+                        </div>
+                        <!-- Video 4 -->
+                        <div class="card video-card">
+                            <div class="video-container">
+                                <iframe src="https://www.youtube.com/embed/jVeHpSafwrE"
+                                    title="Voice-Driven Task Creation" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="video-info">
+                                <h3>APA Project : Voice-Driven Task Creation Assistant</h3>
+                            </div>
+                        </div>
+                        <!-- Video 5 -->
+                        <div class="card video-card">
+                            <div class="video-container">
+                                <iframe src="https://www.youtube.com/embed/IdnBAdDNGiU" title="Medical Coding AI Agent"
+                                    frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="video-info">
+                                <h3>Medical Coding AI Agent | Automation Anywhere APA Project</h3>
+                            </div>
+                        </div>
+                        <!-- Video 6 -->
+                        <div class="card video-card">
+                            <div class="video-container">
+                                <iframe src="https://www.youtube-nocookie.com/embed/BqskRve1KtE"
+                                    title="Enterprise Customer Support" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="video-info">
+                                <h3>Enterprise-Level AI Agent for Customer Support, fully built in Python!</h3>
+                            </div>
+                        </div>
+                        <!-- Video 7 -->
+                        <div class="card video-card">
+                            <div class="video-container">
+                                <iframe src="https://www.youtube-nocookie.com/embed/FD8p2j4-vdE"
+                                    title="Automated Customer Support n8n" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="video-info">
+                                <h3>#n8n How I Automated Customer Support Using n8n + AI</h3>
+                            </div>
+                        </div>
+                        <!-- Video 8 -->
+                        <div class="card video-card">
+                            <div class="video-container">
+                                <iframe src="https://www.youtube-nocookie.com/embed/c5nYOKRsftM"
+                                    title="AI Agent vs Tool" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="video-info">
+                                <h3>Who’s the Boss — AI Agent or Tool? 🤖 | ADTF vs TDAF Explained Simply!</h3>
+                            </div>
+                        </div>
+                        <!-- Video 9 -->
+                        <div class="card video-card">
+                            <div class="video-container">
+                                <iframe src="https://www.youtube-nocookie.com/embed/uHUFRtmqyKU"
+                                    title="Sprint Planning to Jira" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="video-info">
+                                <h3>From Sprint Planning to Jira in Minutes 🤖 | AI Agent Built with Automation Anywhere
+                                </h3>
+                            </div>
+                        </div>
+                        <!-- Video 10 -->
+                        <div class="card video-card">
+                            <div class="video-container">
+                                <iframe src="https://www.youtube-nocookie.com/embed/2-k_pC05dUI"
+                                    title="IT & Customer Support Emails" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <button class="carousel-btn next-btn" onclick="scrollVideos('right')"><i
+                                class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Expertise (Moved & Updated with Logos) -->
+        <section id="expertise" class="section fade-in">
+            <div class="container">
+                <h2>Core Expertise & What I Bring</h2>
+                <div class="grid-3">
+                    <div class="card expertise-card">
+                        <div class="expertise-emoji" style="animation-delay: 0s;">🤖</div>
+                        <h3>Agentic Automation (APA)</h3>
+                        <p>Deep expertise in designing AI-driven RPA solutions and autonomous agents that can plan and
+                            execute complex workflows.</p>
+                    </div>
+                    <div class="card expertise-card">
+                        <div class="expertise-emoji" style="animation-delay: 0.5s;">⚡</div>
+                        <h3>Advanced Workflow Ops</h3>
+                        <p>Mastery of low-code orchestration platforms like <strong>n8n</strong> and
+                            <strong>Zapier</strong>
+                            to build robust, scalable business pipelines.</p>
+                    </div>
+                    <div class="card expertise-card">
+                        <div class="expertise-emoji" style="animation-delay: 1s;">🦾</div>
+                        <h3>RPA Leadership</h3>
+                        <p>Proven track record with <strong>Automation Anywhere</strong> & <strong>UiPath</strong>,
+                            delivering enterprise-grade automation for global clients.</p>
+                    </div>
+                    <div class="card expertise-card">
+                        <div class="expertise-emoji" style="animation-delay: 1.5s;">🔗</div>
+                        <h3>Enterprise Integration</h3>
+                        <p>Strong background in integrating <strong>Salesforce, SAP, Workday</strong>, and Google
+                            Products
+                            for seamless data flow.</p>
+                    </div>
+                    <div class="card expertise-card">
+                        <div class="expertise-emoji" style="animation-delay: 2s;">🎓</div>
+                        <h3>Training & Mentorship</h3>
+                        <p>Conducting master-level sessions on GenAI, Copilot, and RPA via corporate programs and the
+                            <strong>AI Brahma</strong> community.
+                        </p>
+                    </div>
+                    <div class="card expertise-card">
+                        <div class="expertise-emoji" style="animation-delay: 2.5s;">🚀</div>
+                        <h3>Thought Leadership</h3>
+                        <p>Speaker at summits and webinars on AI Agents and GenAI. Passionate about shaping the future
+                            of
+                            digital workforces.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Certifications & Community -->
+        <section id="community" class="section fade-in">
+            <div class="container">
+                <h2>Certifications & Community</h2>
+                <div class="community-wrapper">
+                    <ul class="cert-list card">
+                        <li><i class="fas fa-certificate box-icon"></i> Automation Anywhere MVP</li>
+                        <li><i class="fas fa-check-circle box-icon"></i> Certified Master RPA Professional</li>
+                        <li><i class="fas fa-check-circle box-icon"></i> Certified Solution Architect</li>
+                        <li><i class="fas fa-award box-icon"></i> ABBYY Recognized Developer</li>
+                    </ul>
+                    <div class="community-links card">
+                        <h3>Follow AI Brahma</h3>
+                        <p>Join thousands of learners on my YouTube channel where I share tutorials, reviews, and
+                            insights
+                            on the latest in AI & Automation.</p>
+                        <a href="#" class="btn btn-primary"><i class="fab fa-youtube"></i> Visit Channel</a>
+                    </div>
+                    <!-- WhatsApp Group Card (Homepage Variant) -->
+                    <a href="https://chat.whatsapp.com/CSzwkzRC6933yUjysZodaL" target="_blank" class="wa-group-card">
+                        <div class="wa-icon-large">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="wa-text">
+                            <span class="wa-title">Join our Automation Community</span>
+                            <span class="wa-subtitle">Get daily tips, templates & agentic workflows 🚀</span>
+                        </div>
                     </a>
-
-                    <button class="chat-option-btn ai-agent" onclick="startAIAgent()">
-                        <i class="fas fa-robot"></i> Chat with AI Agent
-                    </button>
                 </div>
-
-                <!-- AI Agent View (Hidden Initially) -->
-                <div class="ai-agent-view" id="aiAgentView" style="display: none; padding: 1rem;">
-                    <div id="aiChatLog"
-                        style="height: 250px; overflow-y: auto; margin-bottom: 1rem; padding-right: 5px;">
-                        <div class="message bot">Hello! I can answer specific questions about Ganesh. What would you
-                            like to know?</div>
-                    </div>
-                    <div class="ai-options-grid">
-                        <button class="ai-chip" onclick="askAI('contact')">📞 Contact Info</button>
-                        <button class="ai-chip" onclick="askAI('strengths')">💪 Core Strengths</button>
-                        <button class="ai-chip" onclick="askAI('linkedin')">🔗 LinkedIn Profile</button>
-                        <button class="ai-chip secondary" onclick="resetChat()">🔄 Main Menu</button>
-                    </div>
-                </div>
-
             </div>
-        </div>
-        <button class="chat-toggle" id="chatToggle">
-            <i class="fas fa-comment-dots"></i>
-        </button>
-    </div>
+        </section>
 
-    <!-- Scripts -->
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/script.js"></script>
+        <!-- Contact -->
+        <section id="contact" class="section fade-in">
+            <div class="container contact-container">
+                <h2>Let's Build Intelligent Systems</h2>
+                <p>Ready to automate the future? Reach out for consulting, mentorship, or collaboration.</p>
+                <div class="contact-links">
+                    <a href="mailto:ai.brahmabusiness@gmail.com" class="contact-item">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                    <a href="https://www.linkedin.com/company/ai-brahmaai/" target="_blank" class="contact-item">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://t.me/+04iV7x2panI2Njc1" target="_blank" class="contact-item">
+                        <i class="fab fa-telegram"></i> Telegram
+                    </a>
+                    <a href="https://wa.me/message/5B3COVB4TXWHO1" target="_blank" class="contact-item">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <h2>Ganesh<span>Bhat</span></h2>
+                        <p>Building the next generation of intelligent automation.</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Ganesh Bhat. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Chatbot Widget -->
+        <div class="chat-widget">
+            <div class="chat-popup" id="chatPopup">
+                <div class="chat-header">
+                    <div class="chat-info">
+                        <div class="chat-avatar">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div>
+                            <h4>AI Assistant</h4>
+                            <p class="status">Online</p>
+                        </div>
+                    </div>
+                    <button class="close-chat" id="closeChat"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="chat-body" id="chatBody" style="padding: 0;">
+
+                    <!-- Initial Options (Dual Path) -->
+                    <div class="chat-options-container" id="initialOptions"
+                        style="padding: 2rem 1.5rem; text-align: center;">
+                        <p style="margin-bottom: 1.5rem; color: #64748b; font-size: 1rem;">How would you like to
+                            connect?
+                        </p>
+
+                        <a href="https://wa.me/message/5B3COVB4TXWHO1" target="_blank" class="chat-option-btn whatsapp">
+                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                        </a>
+
+                        <button class="chat-option-btn ai-agent" onclick="startAIAgent()">
+                            <i class="fas fa-robot"></i> Chat with AI Agent
+                        </button>
+                    </div>
+
+                    <!-- AI Agent View (Hidden Initially) -->
+                    <div class="ai-agent-view" id="aiAgentView" style="display: none; padding: 1rem;">
+                        <div id="aiChatLog"
+                            style="height: 250px; overflow-y: auto; margin-bottom: 1rem; padding-right: 5px;">
+                            <div class="message bot">Hello! I can answer specific questions about Ganesh. What would you
+                                like to know?</div>
+                        </div>
+                        <div class="ai-options-grid">
+                            <button class="ai-chip" onclick="askAI('contact')">📞 Contact Info</button>
+                            <button class="ai-chip" onclick="askAI('strengths')">💪 Core Strengths</button>
+                            <button class="ai-chip" onclick="askAI('linkedin')">🔗 LinkedIn Profile</button>
+                            <button class="ai-chip secondary" onclick="resetChat()">🔄 Main Menu</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <button class="chat-toggle" id="chatToggle">
+                <i class="fas fa-comment-dots"></i>
+            </button>
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/script.js"></script>
 </body>
 
 </html>

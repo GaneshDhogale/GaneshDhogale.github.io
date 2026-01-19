@@ -160,72 +160,27 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Blog Engagement Logic
-    const reactionBtn = document.getElementById('reactionBtn');
-    if (reactionBtn) {
-        const pageId = window.location.pathname; // Unique key per page
-        const countDisplay = document.getElementById('reactCount');
-        const storageKey = 'reaction_' + pageId;
-        const clickedKey = 'reacted_' + pageId;
+    // Blog Engagement Logic (Share Buttons Only)
+    const linkedinBtn = document.getElementById('shareLinkedin');
+    const whatsappBtn = document.getElementById('shareWhatsapp');
 
-        // Initialize Count (Smart Mock: Starts at 20-30 if new)
-        let count = parseInt(localStorage.getItem(storageKey));
-        if (isNaN(count)) {
-            count = 20 + Math.floor(Math.random() * 12); // Initial social proof
-            localStorage.setItem(storageKey, count);
-        }
+    if (linkedinBtn) {
+        linkedinBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const currentUrl = encodeURIComponent(window.location.href);
+            const shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${currentUrl}`;
+            window.open(shareUrl, '_blank', 'width=600,height=600');
+        });
+    }
 
-        // Check if user already reacted
-        if (localStorage.getItem(clickedKey)) {
-            reactionBtn.classList.add('reacted');
-        }
-
-        countDisplay.textContent = count;
-
-        // Create Click Counter Logic (Medium Claps Style)
-        window.toggleReaction = function () {
-            // Always increment
-            count++;
-
-            // Visual Feedback
-            reactionBtn.classList.add('reacted');
-
-            // Store total user clicks (cumulative)
-            localStorage.setItem(storageKey, count);
-
-            // Animate Number
-            countDisplay.style.transform = 'scale(1.5)';
-            setTimeout(() => countDisplay.style.transform = 'scale(1)', 150);
-
-            // Pop animation for Icon
-            const icon = reactionBtn.querySelector('.react-icon');
-            icon.style.transform = 'scale(1.4) rotate(-10deg)';
-            setTimeout(() => icon.style.transform = 'scale(1) rotate(0deg)', 200);
-
-            countDisplay.textContent = count;
-        };
-
-        // Setup Share Links
-        const linkedinBtn = document.getElementById('shareLinkedin');
-        const whatsappBtn = document.getElementById('shareWhatsapp');
-
-        if (linkedinBtn) {
-            linkedinBtn.addEventListener('click', (e) => {
-                e.preventDefault();
-                const currentUrl = encodeURIComponent(window.location.href);
-                const shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${currentUrl}`;
-                window.open(shareUrl, '_blank', 'width=600,height=600');
-            });
-        }
-
-        if (whatsappBtn) {
-            whatsappBtn.addEventListener('click', (e) => {
-                e.preventDefault();
-                const currentUrl = encodeURIComponent(window.location.href);
-                const currentTitle = encodeURIComponent(document.title);
-                const shareUrl = `https://api.whatsapp.com/send?text=${currentTitle}%20${currentUrl}`;
-                window.open(shareUrl, '_blank');
-            });
-        }
+    if (whatsappBtn) {
+        whatsappBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const currentUrl = encodeURIComponent(window.location.href);
+            const currentTitle = encodeURIComponent(document.title);
+            const shareUrl = `https://api.whatsapp.com/send?text=${currentTitle}%20${currentUrl}`;
+            window.open(shareUrl, '_blank');
+        });
     }
 
 });
