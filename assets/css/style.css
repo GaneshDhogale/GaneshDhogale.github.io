@@ -43,6 +43,8 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 body {
@@ -1442,6 +1444,8 @@ footer i {
 @media (max-width: 991px) {
     .orbit-container {
         width: 350px;
+        max-width: 100%;
+        /* Ensure it doesn't overflow small screens */
         height: 350px;
         margin-bottom: 3rem;
         /* Add space for icons */
