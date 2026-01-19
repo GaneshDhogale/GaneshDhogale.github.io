@@ -203,8 +203,9 @@ h1 {
 
 .hero-text {
     flex: 1;
-    min-width: 500px;
-    /* Ensure text doesn't squish */
+    /* min-width: 500px;  Removed for mobile responsiveness */
+    min-width: 300px;
+    /* Better default that allows scaling */
 }
 
 .hero-image {
@@ -214,7 +215,10 @@ h1 {
     position: relative;
     height: 500px;
     align-items: center;
-    min-width: 450px;
+    height: 500px;
+    align-items: center;
+    /* min-width: 450px; Removed for mobile responsiveness */
+    min-width: 300px;
 }
 
 /* Orbit System Styles */
@@ -223,6 +227,8 @@ h1 {
     width: 400px;
     /* Reduced from 450px to prevent overflow */
     height: 400px;
+    max-width: 100%;
+    /* Ensure it doesn't overflow parent */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -915,6 +921,51 @@ footer i {
         width: 100%;
         text-align: center;
     }
+
+    /* Mobile Orbit Fixes */
+    .hero {
+        padding-top: 100px;
+        /* Less top padding */
+        min-height: auto;
+        padding-bottom: 4rem;
+        /* Space for chat widget */
+    }
+
+    .hero-content {
+        gap: 3rem;
+        margin-bottom: 3rem;
+        /* Reduce bottom margin */
+    }
+
+    /* Resize Orbit for Small Screens */
+    .orbit-container {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 0;
+    }
+
+    .profile-img {
+        width: 160px;
+        height: 160px;
+    }
+
+    /* Adjust Orbit Items Radius */
+    .orbit-item {
+        /* Reduce radius even further for 300px container */
+        /* d = 300, r = 150. Item center approx 135px? */
+        transform: rotate(calc(45deg * var(--i))) translate(135px) translateY(-50%);
+    }
+
+    .tech-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        /* Smaller font for mobile */
+    }
 }
 
 /* Chatbot Widget Styles */
@@ -1439,7 +1490,7 @@ footer i {
     transform: scale(1.1);
     /* Add slight zoom instead */
 }
-}
+
 
 /* Carousel Navigation Styles */
 .carousel-wrapper {
